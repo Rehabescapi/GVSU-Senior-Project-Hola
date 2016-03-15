@@ -4,7 +4,7 @@
 			<p class="tagline"><?php bloginfo( 'description' ); ?></p>
 
 			<br />
-  <!-- Vinesh is a nerd -->
+  <!-- Vinesh is a nerd  really -->
 			<?php et_vertex_action_button(); ?>
 		</div> <!-- .container -->
 	</div> <!-- #pre-footer -->
