@@ -114,6 +114,17 @@
   </div>
   
   <div class = "PlaceofBirth">
+     <p><label for="user_BirthCountry">Country: <span>*</span> <br><input type="text" name="user_BirthCountry" value="<?php echo esc_attr($_POST['user_BirthCountry']); ?>"></label></p>
+ <p><label for="user_BirthCity">City: <span>*</span> <br><input type="text" name="user_BirthCity" value="<?php echo esc_attr($_POST['user_BirthCity']); ?>"></label></p>
+ <p><label for="user_BirthState">State: <span>*</span> <br><input type="text" name="user_BirthState" value="<?php echo esc_attr($_POST['user_State']); ?>"></label></p>
+ <p><label for="user_Citizenship">City: <span>*</span> <br><input type="text" name="user_Citizenship" value="<?php echo esc_attr($_POST['user_Citizenship']); ?>"></label></p>
+
+ <p><label for="user_State">State: <span>*</span> <br><input type="text" name="user_State" value="<?php echo esc_attr($_POST['user_State']); ?>"></label></p>
+
+    
+
+     <p><label for="user_VisaStat">Visa Status (if not US citizen ) : <span>*</span> <br><input type="text" name="user_VisaStat" value="<?php echo esc_attr($_POST['user_VisaStat']); ?>"></label></p>
+
     
     
     
@@ -122,7 +133,15 @@
     
     
     
-    
+    <p><label for="user_CollegeName"> What is the Current College you are attending: <span>*</span> <br><input type="text" name="user_CollegeName" value="<?php echo esc_attr($_POST['user_CollegeName']); ?>"></label></p>
+ <p><label for="user_Major1"> What is your Major: <span>*</span> <br><input type="text" name="user_Major1" value="<?php echo esc_attr($_POST['user_Major1']); ?>"></label></p>
+
+  <p><label for="user_Major2"> Secondary Major: <span>*</span> <br><input type="text" name="user_Major2" value="<?php echo esc_attr($_POST['user_Major2']); ?>"></label></p>
+<p><label for="user_Minor">  Minor : <span>*</span> <br><input type="text" name="user_Minor" value="<?php echo esc_attr($_POST['user_Minor']); ?>"></label></p>
+  <p><label for="user_CurrentClassStanding"> Current Class Standing: <span>*</span> <br><input type="text" name="user_CurrentClassStanding" value="<?php echo esc_attr($_POST['user_CurrentClassStanding']); ?>"></label></p>
+
+     <p><label for="user_GPA"> GPA: <span>*</span> <br><input type="text" name="user_GPA" value="<?php echo esc_attr($_POST['user_GPA']); ?>"></label></p>
+
   </div>
   
   
