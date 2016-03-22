@@ -69,3 +69,155 @@ CREATE TABLE wp_posts (
 [16-Mar-2016 21:07:13 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
 [16-Mar-2016 21:07:13 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
 [16-Mar-2016 21:07:13 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:43:42 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 16
+[20-Mar-2016 19:43:42 UTC] PHP Stack trace:
+[20-Mar-2016 19:43:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 19:43:42 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 19:43:42 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:43:42 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:43:56 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 16
+[20-Mar-2016 19:43:56 UTC] PHP Stack trace:
+[20-Mar-2016 19:43:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 19:43:56 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 19:43:56 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:43:56 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:44:04 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 16
+[20-Mar-2016 19:44:04 UTC] PHP Stack trace:
+[20-Mar-2016 19:44:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/edit-comments.php:0
+[20-Mar-2016 19:44:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/edit-comments.php:10
+[20-Mar-2016 19:44:04 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[20-Mar-2016 19:44:04 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:44:04 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:44:40 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 16
+[20-Mar-2016 19:44:40 UTC] PHP Stack trace:
+[20-Mar-2016 19:44:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 19:44:40 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 19:44:40 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:44:40 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:45:40 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 16
+[20-Mar-2016 19:45:40 UTC] PHP Stack trace:
+[20-Mar-2016 19:45:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 19:45:40 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 19:45:40 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:45:40 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:53:40 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 18
+[20-Mar-2016 19:53:40 UTC] PHP Stack trace:
+[20-Mar-2016 19:53:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 19:53:40 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 19:53:40 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:53:40 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:55:12 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 18
+[20-Mar-2016 19:55:12 UTC] PHP Stack trace:
+[20-Mar-2016 19:55:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 19:55:12 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 19:55:12 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:55:12 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:55:40 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 18
+[20-Mar-2016 19:55:40 UTC] PHP Stack trace:
+[20-Mar-2016 19:55:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 19:55:40 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 19:55:40 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:55:40 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:56:13 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 18
+[20-Mar-2016 19:56:13 UTC] PHP Stack trace:
+[20-Mar-2016 19:56:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 19:56:13 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 19:56:13 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:56:13 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:56:34 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 18
+[20-Mar-2016 19:56:34 UTC] PHP Stack trace:
+[20-Mar-2016 19:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/customize.php:0
+[20-Mar-2016 19:56:34 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/customize.php:13
+[20-Mar-2016 19:56:34 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[20-Mar-2016 19:56:34 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:56:34 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:56:37 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 18
+[20-Mar-2016 19:56:37 UTC] PHP Stack trace:
+[20-Mar-2016 19:56:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/customize.php:0
+[20-Mar-2016 19:56:37 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/customize.php:13
+[20-Mar-2016 19:56:37 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[20-Mar-2016 19:56:37 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:56:37 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:59:27 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 16
+[20-Mar-2016 19:59:27 UTC] PHP Stack trace:
+[20-Mar-2016 19:59:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/customize.php:0
+[20-Mar-2016 19:59:27 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/customize.php:13
+[20-Mar-2016 19:59:27 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[20-Mar-2016 19:59:27 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:59:27 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 19:59:31 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 16
+[20-Mar-2016 19:59:31 UTC] PHP Stack trace:
+[20-Mar-2016 19:59:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/customize.php:0
+[20-Mar-2016 19:59:31 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/customize.php:13
+[20-Mar-2016 19:59:31 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[20-Mar-2016 19:59:31 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 19:59:31 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:06:50 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:06:50 UTC] PHP Stack trace:
+[20-Mar-2016 20:06:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 20:06:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 20:06:50 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:06:50 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:06:50 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:06:50 UTC] PHP Stack trace:
+[20-Mar-2016 20:06:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 20:06:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 20:06:50 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:06:50 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:06:50 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:06:50 UTC] PHP Stack trace:
+[20-Mar-2016 20:06:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 20:06:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 20:06:50 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:06:50 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:06:50 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:06:50 UTC] PHP Stack trace:
+[20-Mar-2016 20:06:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 20:06:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 20:06:50 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:06:50 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:06:50 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:06:50 UTC] PHP Stack trace:
+[20-Mar-2016 20:06:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 20:06:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 20:06:50 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:06:50 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:06:50 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:06:50 UTC] PHP Stack trace:
+[20-Mar-2016 20:06:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 20:06:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 20:06:50 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:06:50 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:06:50 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:06:50 UTC] PHP Stack trace:
+[20-Mar-2016 20:06:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 20:06:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 20:06:50 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:06:50 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:06:50 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:06:50 UTC] PHP Stack trace:
+[20-Mar-2016 20:06:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[20-Mar-2016 20:06:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[20-Mar-2016 20:06:50 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:06:50 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:08:56 UTC] PHP Parse error:  syntax error, unexpected 'message_Fname' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:08:56 UTC] PHP Stack trace:
+[20-Mar-2016 20:08:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/customize.php:0
+[20-Mar-2016 20:08:56 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/customize.php:13
+[20-Mar-2016 20:08:56 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[20-Mar-2016 20:08:56 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:08:56 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:09:21 UTC] PHP Parse error:  syntax error, unexpected 'message_Fname' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:09:21 UTC] PHP Stack trace:
+[20-Mar-2016 20:09:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/customize.php:0
+[20-Mar-2016 20:09:21 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/customize.php:13
+[20-Mar-2016 20:09:21 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[20-Mar-2016 20:09:21 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:09:21 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[20-Mar-2016 20:11:00 UTC] PHP Parse error:  syntax error, unexpected 'message_Fname' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/Divi-child/functions.php on line 21
+[20-Mar-2016 20:11:00 UTC] PHP Stack trace:
+[20-Mar-2016 20:11:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/customize.php:0
+[20-Mar-2016 20:11:00 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/customize.php:13
+[20-Mar-2016 20:11:00 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[20-Mar-2016 20:11:00 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[20-Mar-2016 20:11:00 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92

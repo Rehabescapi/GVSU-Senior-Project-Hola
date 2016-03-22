@@ -1,0 +1,35 @@
+/*
+ Theme Name:   Divi Child
+ Theme URI:    http://www.elegantthemes.com/gallery/
+ Description: Divi Child Theme
+ Author: Elegant Themes
+ Author URI: http://www.elegantthemes.com
+ Template:     Divi
+ Version:      1.8.4
+*/
+
+#footerTop {
+position: relative;
+width: 100%;
+margin-left:10px;
+margin-right:5px;
+
+ 
+}
+
+#footerLeft {
+float: left;
+width:100%;
+margin-top: 25px;
+margin-left:75px;
+margin-right:5px;
+margin-bottom:10px;
+}
+
+#footerRight {
+float: right;
+width: 50%;
+margin-left:5px;
+margin-right:5px;
+
+}
