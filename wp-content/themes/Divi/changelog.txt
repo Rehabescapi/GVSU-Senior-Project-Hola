@@ -1,3 +1,64 @@
+version 2.7.1 ( updated 04-01-2016 )
+- Theme Options Page: Fixed modal windows vertical alignment
+	* epanel/css/panel.css
+	* epanel/js/functions-init.js
+- Code Module: Fixed the issue with broken images with names that have "x" letter
+	* includes/builder/functions.php
+- Fixed some issues with Split Test setup "cancel" action
+	* includes/builder/scripts/builder.js
+
+version 2.7 ( updated 03-30-2016 )
+- Added Split Testing feature
+- Added option to configure Gutter Width for individual pages
+- Added option to configure Light/Dark text color for individual pages
+- Added option to configure Content Area and Section background color for individual pages
+- Added option to define custom css for individual pages
+- Added ability to import/export Customizer settings, ePanel settings, Roles settings and Layouts of particular posts/pages made with Divi Builder
+- Improved import/export of Divi Library
+- Added option to configure color palette for color pickers in Divi Builder
+- Added mechanism which diagnoses common issues in Divi Builder ( such as cached files, low memory limit, etc ) and helps to resolve them
+	* /includes/builder
+	* /epanel
+	* functions.php
+- Added "Disable Global" option into right click menu
+	* includes/builder/functions.php
+	* includes/builder/scripts/builder.js
+- Added option to defined the item color for excluded option in pricing table module
+	* includes/builder/main-modules.php
+- Improved Accordion module to make it automatically scroll to the title of active tab
+	* includes/builder/scripts/frontend-builder-scripts.js
+- Fixed the issue when parallax background is not recalculated if error in contact form occurs
+	* includes/builder/scripts/frontend-builder-scripts.js
+- Fixed the typing lag with Yoast plugin
+	* includes/builder/scripts/builder.js
+- Updated jQuery-UI scripts to 1.11 version in support of upcoming WordPress 4.5
+	* includes/builder/scripts/ext/jquery-ui-1.11.4.custom.min.js
+	* includes/builder/scripts/builder.js
+	* includes/builder/functions.php
+- Fixed the issue when php warning in preg_replace_callback() function appears in some cases
+	* includes/builder/core.php
+	* includes/builder/functions.php
+- Fixed the issue with image overlay size in image module
+	* includes/builder/styles/frontend-builder-style.css
+- Fixed the issue when predefined layouts are not showing with WPML
+	* includes/builder/core.php
+- Fixed the issue when Yoast SEO analysis didn't work properly with Divi Builder shortcodes
+	* includes/builder/framework.php
+	* includes/builder/core.php
+- Fixed conflicts with events manager plugin
+	* includes/builder/core.php
+	* includes/builder/framework.php
+- Fixed the issue with Column padding option for smartphones
+	* includes/builder/class-et-builder-element.php
+- Fixed the issue with comments appearance on small screens
+	* includes/builder/styles/frontend-builder-style.css
+- Fixed the issue with incorrect number of posts in "mine" field in the Divi Library
+	* includes/builder/functions.php
+- Fixed the issue when animation is not triggered for the very bottom elements on the page and they never become visible
+	* includes/builder/scripts/frontend-builder-scripts.js
+- Fixed the issue with appearance of WooCommerce cart page on tablet screens
+	* css/main-styles.css
+
 version 2.6.4.4 ( updated 02-25-2016 )
 - Fixed the issue when Customizer is not saving settings
 	* includes/builder/framework.php

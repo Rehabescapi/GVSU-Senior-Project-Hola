@@ -17,8 +17,14 @@ if ( ! function_exists( 'et_epanel_admin_js' ) ) {
 		wp_register_script( 'epanel_colorpicker', $epanel_jsfolder . '/colorpicker.js', array(), et_get_theme_version() );
 		wp_register_script( 'epanel_eye', $epanel_jsfolder . '/eye.js', array(), et_get_theme_version() );
 		wp_register_script( 'epanel_checkbox', $epanel_jsfolder . '/checkbox.js', array(), et_get_theme_version() );
+		wp_enqueue_script( 'wp-color-picker' );
+		wp_enqueue_style( 'wp-color-picker' );
 
-		wp_enqueue_script( 'epanel_functions_init', $epanel_jsfolder . '/functions-init.js', array( 'jquery', 'jquery-ui-tabs', 'jquery-form', 'epanel_colorpicker', 'epanel_eye', 'epanel_checkbox' ), et_get_theme_version() );
+		if ( defined( 'ET_BUILDER_URI' ) ) {
+			wp_enqueue_script( 'wp-color-picker-alpha', ET_BUILDER_URI . '/scripts/ext/wp-color-picker-alpha.min.js', array( 'jquery', 'wp-color-picker' ), et_get_theme_version(), true );
+		}
+
+		wp_enqueue_script( 'epanel_functions_init', $epanel_jsfolder . '/functions-init.js', array( 'jquery', 'jquery-ui-tabs', 'jquery-form', 'epanel_colorpicker', 'epanel_eye', 'epanel_checkbox', 'wp-color-picker-alpha' ), et_get_theme_version() );
 		wp_localize_script( 'epanel_functions_init', 'ePanelSettings', array(
 			'clearpath'    => get_template_directory_uri() . '/epanel/images/empty.png',
 			'epanel_nonce' => wp_create_nonce( 'epanel_nonce' ),
@@ -146,7 +152,8 @@ if ( ! function_exists( 'et_build_epanel' ) ) {
 										$epanelMainTabs = apply_filters( 'epanel_page_maintabs', $epanelMainTabs );
 									?>
 
-									<a href="#" class="defaults-button" title="<?php esc_attr_e( 'Reset to Defaults', $themename ); ?>"><span class="label"><?php esc_html_e( 'Reset to Defaults', $themename ); ?></span></a>
+									<a href="#" class="defaults-button epanel-reset" title="<?php esc_attr_e( 'Reset to Defaults', $themename ); ?>"><span class="label"><?php esc_html_e( 'Reset to Defaults', $themename ); ?></span></a>
+									<?php echo et_core_portability_link( 'epanel', array( 'class' => 'defaults-button epanel-portability' ) ); ?>
 								</div>
 								<ul id="epanel-mainmenu">
 									<?php if ( in_array( 'general', $epanelMainTabs ) ) { ?>
@@ -175,7 +182,14 @@ if ( ! function_exists( 'et_build_epanel' ) ) {
 
 								<?php
 								foreach ($options as $value) {
-									if ( in_array( $value['type'], array( 'text', 'textlimit', 'textarea', 'select', 'checkboxes', 'different_checkboxes', 'colorpicker', 'textcolorpopup', 'upload', 'callback_function' ) ) ) { ?>
+									if ( ! empty( $value[ 'depends_on' ] ) ) {
+										// function defined in 'depends on' key returns false, if a setting shouldn't be displayed
+										if ( ! call_user_func( $value[ 'depends_on' ] ) ) {
+											continue;
+										}
+									}
+
+									if ( in_array( $value['type'], array( 'text', 'textlimit', 'textarea', 'select', 'checkboxes', 'different_checkboxes', 'colorpicker', 'textcolorpopup', 'upload', 'callback_function', 'et_color_palette' ) ) ) { ?>
 											<div class="epanel-box">
 												<div class="box-title">
 													<h3><?php echo esc_html( $value['name'] ); ?></h3>
@@ -338,6 +352,26 @@ if ( ! function_exists( 'et_build_epanel' ) ) {
 													<?php } elseif ( 'callback_function' == $value['type'] ) {
 
 														call_user_func( $value['function_name'] ); ?>
+
+													<?php } elseif ( 'et_color_palette' == $value['type'] ) {
+															$items_amount = isset( $value['items_amount'] ) ? $value['items_amount'] : 1;
+															$et_input_value = '' !== str_replace( '|', '', et_get_option( $value['id'] ) ) ? et_get_option( $value['id'] ) : $value['std'];
+														?>
+															<div class="et_pb_colorpalette_overview">
+														<?php
+															for ( $colorpalette_index = 1; $colorpalette_index <= $items_amount; $colorpalette_index++ ) { ?>
+																<span class="colorpalette-item colorpalette-item-<?php echo esc_attr( $colorpalette_index ); ?>" data-index="<?php echo esc_attr( $colorpalette_index ); ?>"></span>
+														<?php } ?>
+
+															</div>
+
+														<?php for ( $colorpicker_index = 1; $colorpicker_index <= $items_amount; $colorpicker_index++ ) { ?>
+																<div class="colorpalette-colorpicker" data-index="<?php echo esc_attr( $colorpicker_index ); ?>">
+																	<input data-index="<?php echo esc_attr( $colorpicker_index ); ?>" type="text" class="input-colorpalette-colorpicker" data-alpha="true" />
+																</div>
+														<?php } ?>
+
+														<input name="<?php echo esc_attr( $value['id'] ); ?>" id="<?php echo esc_attr( $value['id'] ); ?>" class="et_color_palette_main_input" type="hidden" value="<?php echo esc_attr( $et_input_value ); ?>" />
 
 													<?php } ?>
 
@@ -566,7 +600,7 @@ if ( ! function_exists( 'epanel_save_data' ) ) {
 								// makes sure the option is a url
 								et_update_option( $value['id'], esc_url_raw( stripslashes( $_POST[$value['id']] ) ) );
 
-							} elseif ( 'textcolorpopup' == $value['type'] ) {
+							} elseif ( in_array( $value['type'], array( 'textcolorpopup', 'et_color_palette' ) ) ) {
 
 								// the color value
 								et_update_option( $value['id'], sanitize_text_field( stripslashes( $_POST[$value['id']] ) ) );
@@ -667,3 +701,42 @@ if ( 'themes.php' == $pagenow && isset( $_GET['page'] ) && ( $_GET['page'] == ba
 	add_action( 'admin_print_scripts', 'et_epanel_media_upload_scripts' );
 	add_action( 'admin_print_styles', 'et_epanel_media_upload_styles' );
 }
+
+/**
+ * Register ePanel portability.
+ *
+ * @since To define
+ *
+ * @return bool Always return true.
+ */
+function et_epanel_register_portability() {
+	global $shortname, $themename, $options;
+
+	// Make sure the Portability is loaded.
+	et_core_load_component( 'portability' );
+
+	// Load ePanel options.
+	et_load_core_options();
+
+	// Include only ePanel options.
+	$include = array();
+
+	foreach ( $options as $option ) {
+		if ( isset( $option['id'] ) ) {
+			$include[ $option['id'] ] = true;
+		}
+	}
+
+	// Register the portability.
+	et_core_portability_register( 'epanel', array(
+		'name'    => sprintf(
+			esc_html__( '%s Theme Options', $themename ),
+			$themename
+		),
+		'type'    => 'options',
+		'target'  => "et_{$shortname}",
+		'include' => $include,
+		'view'    => ( isset( $_GET['page'] ) && $_GET['page'] == "et_{$shortname}_options" ),
+	) );
+}
+add_action( 'admin_init', 'et_epanel_register_portability' );

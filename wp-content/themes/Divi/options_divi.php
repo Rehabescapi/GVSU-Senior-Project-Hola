@@ -72,6 +72,14 @@ $options = array (
 				   "desc" => esc_html__("Enable this if you want to replace the WordPress default gallery with the Divi-style gallery.",$themename)
 			),
 
+			array( "name"         => esc_html__( "Color Pickers Default Palette", $themename ),
+				   "id"           => $shortname . "_color_palette",
+				   "type"         => "et_color_palette",
+				   "items_amount" => 8,
+				   "std"          => '#000000|#FFFFFF|#E02B20|#E09900|#EDF000|#7CDA24|#0C71C3|#8300E9',
+				   "desc"         => esc_html__( "Define the default color palette for color pickers in the Divi Builder.", $themename ),
+			),
+
 			array( "type" => "clearfix",),
 
 			array( "name" => esc_html__("Grab the first post image",$themename),
@@ -275,6 +283,14 @@ $options = array (
 				   "std" => "",
 				   "desc" => esc_html__( "Here you can add custom css to override or extend default styles.", $themename ),
 					"validation_type" => "nohtml"
+			),
+
+			array(
+				"name"          => esc_html__( "Memory Limit Increase", $themename ),
+				"type"          => "callback_function",
+				"desc"          => esc_html__( 'Here you can disable automatic memory limit increase.', $themename ),
+				"function_name" => 'et_reset_memory_limit_increase_setting',
+				"depends_on"    => 'et_should_memory_limit_increase',
 			),
 
 		array( "name" => "general-1",

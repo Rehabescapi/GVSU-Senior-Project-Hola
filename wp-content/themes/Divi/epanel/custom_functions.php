@@ -1319,7 +1319,9 @@ function et_widget_force_title( $title ){
 if( version_compare( phpversion(), '4.4', '>=' ) ) add_filter( 'get_comments_number', 'et_comment_count', 0, 2 );
 
 function et_comment_count( $count, $post_id ) {
-	if ( ! is_admin() ) {
+	$is_doing_ajax = defined( 'DOING_AJAX' ) && DOING_AJAX ? true : false;
+
+	if ( ! is_admin() || $is_doing_ajax ) {
 		global $id;
 		$post_id = $post_id ? $post_id : $id;
 		$get_comments = get_comments( array('post_id' => $post_id, 'status' => 'approve') );
@@ -1941,6 +1943,8 @@ if ( ! function_exists( 'et_get_allowed_localization_html_elements' ) ) :
 			'style' => array(),
 		);
 
+		$whitelisted_attributes = apply_filters( 'et_allowed_localization_html_attributes', $whitelisted_attributes );
+
 		$elements = array(
 			'a'      => array(
 				'href'  => array(),
@@ -1954,6 +1958,8 @@ if ( ! function_exists( 'et_get_allowed_localization_html_elements' ) ) :
 			'div'    => array(),
 			'strong' => array(),
 		);
+
+		$elements = apply_filters( 'et_allowed_localization_html_elements', $elements );
 
 		foreach ( $elements as $tag => $attributes ) {
 			$elements[ $tag ] = array_merge( $attributes, $whitelisted_attributes );
