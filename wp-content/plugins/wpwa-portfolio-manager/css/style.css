@@ -1,0 +1,56 @@
+#wpwa_custom_panel{
+    padding: 2%;
+    background: #FFF;
+    min-height: 200px;
+}
+#wpwa_custom_panel ul{
+    margin: 0;
+    padding: 0;
+}
+#wpwa_custom_panel li{
+    list-style: none;
+    width: 100%;
+}
+
+#wpwa_custom_panel p{
+    margin: 0 !important;
+}
+
+#wpwa_custom_panel .wpwa_frm_label{
+    width: 30%;
+    float: left;
+}
+
+#wpwa_custom_panel .wpwa_frm_field{
+    background: none repeat scroll 0 0 #F8F8F8;
+    height: 30px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 60%;
+}
+
+#wpwa_custom_panel .wpwa_frm_error{
+    background: none repeat scroll 0 0 #F28080;
+    color: #FFFFFF;
+    font-family: helvetica;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 2%;
+    width: 86%;
+}
+
+#wpwa_info_message{
+    padding: 3%;
+    font-weight: bold;
+    background: #E6E6FE;
+}
+
+.wpwa_frm_success{
+    background: #A5D286;
+    color: #FFF;
+    font-family: helvetica;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 2%;
+    width: 86%;
+}
