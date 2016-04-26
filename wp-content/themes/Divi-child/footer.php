@@ -3,7 +3,6 @@
 	<span class="et_pb_scroll_top et-pb-icon"></span>
 
 <?php endif;
-
 if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 			<footer id="main-footer">
@@ -11,7 +10,7 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 				<div id="footerTop">
 					
 						<div id="footerLeft"><span id="contactUs"></span>
-						<a href="./" id="footerHomeLink" title="home" data-content="home"><img src="https://projectmexico-premium-rehabescapi.c9users.io/wp-content/uploads/2016/02/admin-ajaxrcfc.png" width="100" height="100"  alt="AUSM" />
+						<a href="./" id="footerHomeLink" title="home" data-content="home"><img src="https://projectmexico-premium-rehabescapi.c9users.io/wp-content/uploads/2016/02/32-1-1-e1456691498291.png" width="100" height="100"  alt="AUSM" />
      					</div>
      					
 				

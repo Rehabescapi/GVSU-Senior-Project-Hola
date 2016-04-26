@@ -3,7 +3,6 @@
 	<span class="et_pb_scroll_top et-pb-icon"></span>
 
 <?php endif;
-
 if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 			<footer id="main-footer">
